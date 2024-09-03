@@ -1,14 +1,32 @@
-body{
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.header-link{
+    text-transform: capitalize;
+    margin: 3px 5px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium';
+}
+.logo{
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+
+
+/* body{
     background-color: #d0edf5 ;
-    color :rgb(13, 17, 231) ;
+    color :rgb(182, 182, 218) ;
     font-family: serif;
     font-size  :20px;
     line-height: 1,6px;
     margin: 0;
 }
 .container{
-    width: 80%;
-    margin: auto;
 }
 .box-1{
     background-color: #333;
@@ -61,7 +79,6 @@ a:visited{
     list-style-image: url(./assets/check.png);
 }
 
-/* testing checkbox example */
 .checkbox-wrapper-39 *,
 .checkbox-wrapper-39 *::before,
 .checkbox-wrapper-39 *::after {
@@ -97,4 +114,4 @@ a:visited{
   border: 3px solid #434343;
   border-radius: 6px;
   transition: all 0.375s;
-}
+} */
