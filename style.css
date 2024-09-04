@@ -15,103 +15,46 @@ header{
     border-radius: 50%;
 }
 
-
-
-
-/* body{
-    background-color: #d0edf5 ;
-    color :rgb(182, 182, 218) ;
+.my-form{
+    padding: 20px;
+}
+.form-group{
+    padding-bottom: 10px;
+}
+body{
     font-family: serif;
     font-size  :20px;
     line-height: 1,6px;
     margin: 0;
 }
-.container{
-}
-.box-1{
-    background-color: #333;
-    color: #fff;
-    border-right: 5px red solid;
-    border-left: 5px red solid;
-    border-top: 5px red solid;
-    border-bottom: 5px red solid;
-    padding: 40px;
-    margin: 20px;
-}
-.box-1 p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 800px;
-    font-style: italic;
-    word-spacing: 1em;
-}
-.box-2{
-    border: 5px dotted #333;
-    padding: 20px;
-    margin: 20px 0;
-}
-.categories{
-    border: 1px #333 solid;
-    padding: 10px;
-    border-radius: 15px;
-}
-.categories h2{
-    text-align: center;
-}
 a{
     text-decoration: none;
     color: hsl(66, 96%, 33%);
-}
-a:active{
-    color: green;
 }
 a:hover{
     color: red;
 }
 a:visited{
-    color:aqua;
+    color:rgb(115, 175, 175);
 }
-.categories ul{
-    list-style: square;
+footer{
+    background-color: #a3d1bc;
+    padding: 20px;
 }
-.categories li{
-    padding-bottom:6px ;
-    border-bottom: dotted 3px #333;
-    list-style-image: url(./assets/check.png);
+.box-1{
+    padding: 20px;
+    border: 15px;
 }
-
-.checkbox-wrapper-39 *,
-.checkbox-wrapper-39 *::before,
-.checkbox-wrapper-39 *::after {
-  box-sizing: border-box;
+:root{
+    --primary: yellow;
+    --secondary: blue;
 }
-
-.checkbox-wrapper-39 label {
-  display: block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
+body,p,a,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
-
-.checkbox-wrapper-39 input {
-  visibility: hidden;
-  display: none;
+body{
+    background: var(--secondary);
+    overflow-x: hidden;
 }
-
-.checkbox-wrapper-39 input:checked ~ .checkbox {
- transform: rotate(45deg);
- width: 14px;
- margin-left: 12px;
- border-color: #24c78e;
- border-top-color: transparent;
- border-left-color: transparent;
- border-radius: 0;
-}
-
-.checkbox-wrapper-39 .checkbox {
-  display: block;
-  width: inherit;
-  height: inherit;
-  border: 3px solid #434343;
-  border-radius: 6px;
-  transition: all 0.375s;
-} */
