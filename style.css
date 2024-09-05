@@ -21,6 +21,9 @@ header{
 .form-group{
     padding-bottom: 10px;
 }
+.form-group input{
+    border-radius: 8px;
+}
 body{
     font-family: serif;
     font-size  :20px;
@@ -41,20 +44,73 @@ footer{
     background-color: #a3d1bc;
     padding: 20px;
 }
-.box-1{
+footer img{
+    border-radius: 10px;
+}
+.container {
     padding: 20px;
     border: 15px;
 }
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+.box-1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box-2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box-3{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container a{
+    text-align: center;
+    padding-top: 25px;
+}
 :root{
     --primary: yellow;
-    --secondary: blue;
-}
-body,p,a,ul,li{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+    --secondary: rgb(44, 44, 129);
 }
 body{
     background: var(--secondary);
     overflow-x: hidden;
 }
+/*small tablet styles*/
+@media screen and (min-width:620%){ 
+}
+/*large tablets and laptop styles*/
+@media screen and (min-width:960px){
+    body{
+        font-size: 18px;
+    }
+}
+/*desktop styles*/
+@media screen and (min-width:1200px){
+    body{
+        font-size: 20px;
+    }
+}
+/* p,li{
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.box-4{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box-5{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box-6{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} */
