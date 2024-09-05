@@ -1,19 +1,37 @@
+:root{
+    --primary: yellow;
+    --secondary: rgb(44, 44, 129);
+}
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f0f0f0;
+    padding: 0 5px;
 }
 .header-link{
-    text-transform: capitalize;
+    color: black;
     margin: 3px 5px;
     font-size: large;
+    text-decoration: none;
+    text-transform: capitalize;
     font-family: 'Franklin Gothic Medium';
 }
 .logo{
     width: 100px;
     border-radius: 50%;
 }
+ 
+/* landing page */
+.landing {
+    background-image: url(./assets/omid-armin-f7MjbzHOxNU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    min-height: 90vh;
+    width: 100vw;
+}
+/* end landing page */
 
 .my-form{
     padding: 20px;
@@ -30,16 +48,7 @@ body{
     line-height: 1,6px;
     margin: 0;
 }
-a{
-    text-decoration: none;
-    color: hsl(66, 96%, 33%);
-}
-a:hover{
-    color: red;
-}
-a:visited{
-    color:rgb(115, 175, 175);
-}
+
 footer{
     background-color: #a3d1bc;
     padding: 20px;
@@ -50,10 +59,8 @@ footer img{
 .container {
     padding: 20px;
     border: 15px;
-}
-.container{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .box-1{
     display: flex;
@@ -71,14 +78,7 @@ footer img{
     text-align: center;
     padding-top: 25px;
 }
-:root{
-    --primary: yellow;
-    --secondary: rgb(44, 44, 129);
-}
-body{
-    background: var(--secondary);
-    overflow-x: hidden;
-}
+
 /*small tablet styles*/
 @media screen and (min-width:620%){ 
 }
@@ -94,23 +94,3 @@ body{
         font-size: 20px;
     }
 }
-/* p,li{
-    font-size: 1.2em;
-    font-family: 'Courier New', Courier, monospace;
-}
-.box-4{
-    display: flex;
-    flex-wrap: wrap;
-}
-.box-5{
-    display: flex;
-    flex-wrap: wrap;
-}
-.box-6{
-    display: flex;
-    flex-wrap: wrap;
-}
-.container-2{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-} */
