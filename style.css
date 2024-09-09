@@ -31,8 +31,36 @@ header{
     min-height: 90vh;
     width: 100vw;
 }
+.landing .welcome{
+    color:antiquewhite;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 25%;
+}
+.landing .quote{
+    color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+    display:flex;
+    flex-wrap:wrap;
+}
+.wrapper .quote{
+    line-height: 3,8px;
+    animation: slide-up 7s infinite;
+}
+.start{
+    padding: 15px;
+    border: 10px;
+    margin-top: 15px;
+}
 /* end landing page */
-
+/* services page */
+.skillset{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
 .my-form{
     padding: 20px;
 }
@@ -48,49 +76,51 @@ body{
     line-height: 1,6px;
     margin: 0;
 }
-
 footer{
-    background-color: #a3d1bc;
+    background-color: #caecdd;
     padding: 20px;
 }
 footer img{
     border-radius: 10px;
 }
-.container {
+.services {
     padding: 20px;
     border: 15px;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.box-1{
-    display: flex;
-    flex-wrap: wrap;
+.service-item{
+    padding-top: 69px;
+    display: grid;
+    justify-items: center;
 }
-.box-2{
-    display: flex;
-    flex-wrap: wrap;
-}
-.box-3{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .container a{
     text-align: center;
     padding-top: 25px;
 }
-
-/*small tablet styles*/
-@media screen and (min-width:620%){ 
-}
-/*large tablets and laptop styles*/
-@media screen and (min-width:960px){
+/* phones */
+@media screen and (max-width: 600px) { 
     body{
-        font-size: 18px;
+        font-size:20px;
     }
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* justify-items: center;
+        justify-content: center; */
+    }
+
 }
 /*desktop styles*/
-@media screen and (min-width:1200px){
-    body{
+@media screen and (min-width:992px){
+    .body{
         font-size: 20px;
+    }
+    .grid{
+        width: 100%;
+        max-width: 1060px;
+        margin: auto;
     }
 }
