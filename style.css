@@ -1,7 +1,4 @@
-:root{
-    --primary: yellow;
-    --secondary: rgb(44, 44, 129);
-}
+
 
 header{
     display: flex;
@@ -24,35 +21,44 @@ header{
 }
  
 /* landing page */
+
 .landing {
     background-image: url(./assets/omid-armin-f7MjbzHOxNU-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: auto;
     min-height: 90vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: Arial;
+    font-weight: bolder;
+}
+.landing P {
+    background-color: #8a692b42;
+}
+.welcome{
+    animation: fade-inout 5s infinite alternate;
+}
+.quote{
+    color: black;
+    animation: fade-inout 5s infinite 5s alternate;
+}
+@keyframes fade-inout{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
 }
 .landing .welcome{
     color:antiquewhite;
-    font-size: large;
-    font-weight: bold;
     text-decoration: underline;
-    text-decoration-thickness: 25%;
+    /* text-decoration-thickness: 25%; */
 }
-.landing .quote{
-    color: aliceblue;
-    font-size: large;
+.landing button{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
     font-weight: bold;
-    display:flex;
-    flex-wrap:wrap;
-}
-.wrapper .quote{
-    line-height: 3,8px;
-    animation: slide-up 7s infinite;
-}
-.start{
-    padding: 15px;
-    border: 10px;
-    margin-top: 15px;
 }
 /* end landing page */
 /* services page */
